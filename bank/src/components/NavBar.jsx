@@ -7,10 +7,10 @@ const NavBar = () => {
     <header>
         <h1 id="header">FlatIron Bank</h1>
       <>
-        {/* <NavLink to="/">Home</NavLink> */}
+        <NavLink to="/">Home</NavLink>
       </>
       <>
-      {/* <NavLink to="/transaction">Make Transaction</NavLink> */}
+      <NavLink to="/transaction">Make Transaction</NavLink>
       </>
       </header>
     </>

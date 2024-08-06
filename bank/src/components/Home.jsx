@@ -14,6 +14,9 @@ const Home = ({transactions, setTransactions}) => {
         financial world with a burst of innovation and flair!
       </h3>
       <>
+      {disTrans}
+      </>
+      <>
       {/* One should see transactions and there should be an input where someone can see button to search for transaction */}
       </>
     </>
