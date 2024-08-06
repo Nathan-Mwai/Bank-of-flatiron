@@ -3,12 +3,16 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
+import Transactions from './components/Transactions';
+import AddTrans from './components/AddTrans';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Home />
+      <Transactions />
+      <AddTrans/>
       {/* <Routes>
       <Route></Route>
       </Routes> */}
