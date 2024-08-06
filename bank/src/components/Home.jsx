@@ -1,6 +1,10 @@
 import React from "react";
+import Transactions from "./Transactions";
 
-const Home = () => {
+const Home = ({transactions, setTransactions}) => {
+
+    const disTrans = transactions.map(transaction => <Transactions key={transaction.id} transaction={transaction} setTransactions={setTransactions}/>)
+
   return (
     <>
       <h3>
