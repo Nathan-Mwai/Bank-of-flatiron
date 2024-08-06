@@ -1,39 +1,23 @@
-import "./App.css";
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import { Route, Routes } from "react-router-dom";
-import AddTrans from "./components/AddTrans";
-import { useEffect, useState } from "react";
-import TransDetails from "./components/TransDetails";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [transactions, setTransactions] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/transactions")
-      .then((res) => res.json())
-      .then((transactions) => setTransactions(transactions))
-      .catch((err) => console.log(err));
-  }, []);
-
   return (
     <div className="App">
-      
-      <NavBar />
-      {/* Adds a route that will be the one storing and displaying the information */}
-      <Routes>
-        <Route path="/" element={<Home transactions={transactions} />} />
-        <Route path="/transactions/:id" element={<TransDetails />} />
-        <Route
-          path="/transactions/add"
-          element={
-            <AddTrans
-              transactions={transactions}
-              setTransactions={setTransactions}
-            />
-          }
-        />
-      </Routes>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
