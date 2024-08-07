@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+#table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+table caption {
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
+  position: absolute;
+  margin-top: -2.25rem;
+  margin-left: 0.5rem;
+}
+
+tbody td {
+  width: 100vw;
+  max-width: 4rem;
+  min-width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}

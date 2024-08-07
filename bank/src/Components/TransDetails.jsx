@@ -2,7 +2,7 @@ import React from 'react'
 
 const TransDetails = ({transaction}) => {
   return (
-    <div>
+    <div id='table-wrap'>
         <table>
             <caption>{transaction.category}</caption>
             <thead>
