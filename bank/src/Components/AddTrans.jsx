@@ -23,7 +23,7 @@ const AddTrans = ({ transactions, setTransactions }) => {
     const handleSubmit = (e) => {
         // e.preventDefault();
 
-        fetch("http://localhost:3000/transactions", {
+        fetch("https://bank-flat-iron-api.vercel.app/transactions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

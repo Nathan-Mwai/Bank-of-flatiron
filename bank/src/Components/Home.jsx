@@ -7,7 +7,7 @@ const Home = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:3000/transactions")
+        fetch("https://bank-flat-iron-api.vercel.app/transactions")
             .then(res => res.json())
             .then(transactions => setTransactions(transactions))
             .catch(err => console.log(err));
