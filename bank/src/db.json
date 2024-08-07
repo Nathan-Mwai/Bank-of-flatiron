@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "id": "13",
+      "date": "2019-12-18",
+      "description": "BerryRexs, Pay Roommate for Rent",
+      "category": "Housing",
+      "amount": -65000
     }
   ]
 }

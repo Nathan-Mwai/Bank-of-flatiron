@@ -21,7 +21,7 @@ const AddTrans = ({ transactions, setTransactions }) => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         fetch("http://localhost:3000/transactions", {
             method: "POST",
@@ -55,7 +55,6 @@ const AddTrans = ({ transactions, setTransactions }) => {
                         type="date"
                         name="date"
                         id="date"
-                        placeholder="Enter Date"
                         value={formData.date}
                         required
                         onChange={handleAdd}
@@ -67,7 +66,6 @@ const AddTrans = ({ transactions, setTransactions }) => {
                         type="text"
                         name="description"
                         id="description"
-                        placeholder="Enter Description"
                         value={formData.description}
                         required
                         onChange={handleAdd}
@@ -99,7 +97,6 @@ const AddTrans = ({ transactions, setTransactions }) => {
                         id="amount"
                         min="0"
                         max="9999999999"
-                        placeholder="Enter Amount"
                         value={formData.amount}
                         onChange={handleAdd}
                     />
