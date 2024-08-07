@@ -38,7 +38,7 @@ const AddTrans = ({ transactions, setTransactions }) => {
                     date: "",
                     description: "",
                     category: "",
-                    amount: "",
+                    amount:"",
                 });
                 // navigate("/"); // Redirect after successful submission
             })
